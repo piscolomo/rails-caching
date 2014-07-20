@@ -1,6 +1,9 @@
 <h1>List Users</h1>
-<% @users.each do |user| %>
-	<h2><%= user.name%> - <%= user.email %></h2>
-	<%= render user.posts %>
-	<hr>
-<% end %>
+
+	<% @users.each do |user| %>
+		<% cache(user) do %>
+			<h2><%= user.name%> - <%= user.email %></h2>
+				<%= render user.posts %>
+			<hr>
+		<% end %>
+	<% end %>
