@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-  	@users = User.limit(5).all
+  	@users = User.first(5)
   end
 end
