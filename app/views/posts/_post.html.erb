@@ -1,2 +1,4 @@
-<h3><%= post.title %></h3>
-<p><%= post.body %></p>
+<% cache do %>
+	<h6><%= post.title %></h6>
+	<p><%= post.body %></p>
+<% end %>
