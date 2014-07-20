@@ -43,3 +43,5 @@ gem 'cache_digests'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'newrelic_rpm', group: :production
+gem 'memcachier', group: :production
+gem 'dalli', group: :production
