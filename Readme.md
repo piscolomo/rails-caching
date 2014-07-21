@@ -3,6 +3,10 @@ rails-caching
 
 Demo to getting started with caching in Rails
 
+In development environment, you need to enable the perform caching in development.rb
+
+	 config.action_controller.perform_caching = true
+
 Russian Doll caching is a type of nested fragment caching that auto expires fragments when object timestamps change
 
 Example of Rusian Doll Caching, check app/views/welcome/index.html.erb
